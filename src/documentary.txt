@@ -1,0 +1,46 @@
+instance method
+We created 3 classes character, sword, shield
+*Character*
+instance variable
+String name;
+    level
+    maxHP
+    hp
+    Boolean dead #mark if dead or not
+    maxMana
+    mana
+    maxRunSpeed
+    runSpeedPenalty
+    runSpeed # runspeed affected by penalty
+    attack
+    defense
+    Boolean swordEquipped = false;
+    sword # stored equipped sword
+    Boolean shieldEquipped = false;
+    shield # stored equipped shield
+instance method()
+-Recovery() #If the character is not dead, add health, add mana.
+-GodRevive() #Revive a character that has died.
+-UpdateStat () #Update the parameters of the character.
+-LevelUp() #Level up, allowing the option to choose how many levels to advance.
+-EquipSword() input-sword #Equip a sword and set the character's attack value to the damage value of the sword.
+-unEquipSword()- #unEquipSword
+-EquipShield () input - shield  #Equip a shield and set the character's defense value.to the defense value of the sword.
+-EquipShield ()- #unEquipShiled
+-ShowStat() #print character's stat
+-upgradeSword() input sword, level # upgrade the sword by the input level then updatestat.
+-upgradeShield() input sword, level # upgrade the shield by the input level then updatestat.
+-Attack () input-opponent  #Select a character to attack. while checking dead state. if attacker or opponent dead, you can't attack
+-duel() input-opponent   #Two characters engage in combat using speed as the determining factor. The winner then use attack()
+*Sword*
+instance variable
+    level
+    damage
+instance method()
+    showstat()
+*Shield*
+instance variable
+    level
+    defense
+instance method()
+    showstat()
